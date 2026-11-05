@@ -135,15 +135,19 @@ triggers.forEach(link => {
     })
 })
 
-lightbox.addEventListener('click', function (e) {
-    if (e.target === lightbox) {
-        lightbox.style.display = 'none';
-    }
-})
+if (lightbox) {
+    lightbox.addEventListener('click', function (e) {
+        if (e.target === lightbox) {
+            lightbox.style.display = 'none';
+        }
+    })
+}
 
-closeBtn.addEventListener('click', function () {
-    lightbox.style.display = 'none';
-})
+if (closeBtn && lightbox) {
+    closeBtn.addEventListener('click', function () {
+        lightbox.style.display = 'none';
+    })
+}
 
 //Search logic done as class project vvv
 const textSearch = document.getElementById("textSearch");
@@ -300,7 +304,7 @@ function placeOrder() {
         <p><strong>Name:</strong> ${customerName.value}</p>
         <p><strong>Contact:</strong> ${contact.value}</p>
         <p><strong>Pickup Password:</strong> ${pickupPassword.value}</p>
-        <p><strong>Date Ordered:</strong> ${dateInvoice.value}</p>
+        <p><strong>Date Ordered:</strong> ${dateInvoice}</p>
 
         <table>
             <thead>
