@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vintage Stitches is a growing business which offers a select, rotating rang of high quality, handmade woolen clothing products and accessories.">
+    <meta name="keywords" content="Cloths, Accessories, Knitted, Handmade, Winter, Warm, Durban, South Africa">
+    <link rel="stylesheet" href="_css/styleSheet.css">
+    <title>Vintage Stitches | Checkout</title>
+</head>
+<body>
+    <header>
+        <h1>Checkout and invoice for your selected items</h1>
+        <nav>
+         <a href="homepage.html">Home</a>
+         <a href="catalogue.html">Catalogue</a>
+         <a href="checkout.html">Checkout</a>
+         <a href="faq.html">FAQ</a>     
+         <a href="about-us.html">About Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Place your order for wool accessories and knitwear</h2>
+        <p class="subheading">Review your selections and complete your order details for pickup or collection.</p>
+
+        <!--Display checkout list and order form-->
+        <div class="multibox">
+        <div  style="flex: .6;" class="checkoutField">
+            <div id="checkoutDisplay">
+            </div>
+        </div>
+    
+        <div style="flex: .4;">
+            <h3>Details:</h3>
+            <form class="subForm" name="checkoutForm" method="POST" data-netlify="true">
+                <input type="hidden" name="form-name" value="checkoutForm">
+                <input type="hidden" name="cart" id="cartData">
+                
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" maxlength="20"><br><br>
+
+                <label for="contact">Phone Number/Email Address:</label><br>
+                <input type="text" id="contact" name="contact"><br><br>
+
+                <label for="pp">Your Pickup Password:</label><br>
+                <input type="text" id="pp" name="pp" maxlength="20"><br><br>
+
+                <button type="submit" id="placeOrder" class="buttonChe">Place order</button>
+            </form>
+        </div>
+        </div>
+        <!--Placeholder for invoice-->
+        <div id="invoiceField" style="display: none;"></div>
+    </main>
+
+    <footer style="background-color: #f1c0e8;">
+        <p>© 2026 Vintage Stitches. All rights reserved.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.12.4.min.js"></script>
+    <script src="_js-assets/scripts.js"></script>
+</body>
+</html>

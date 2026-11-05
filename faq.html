@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vintage Stitches is a growing business which offers a select, rotating rang of high quality, handmade woolen clothing products and accessories.">
+    <meta name="keywords" content="Cloths, Accessories, Knitted, Handmade, Winter, Warm, Durban, South Africa">
+    <link rel="stylesheet" href="_css/styleSheet.css">
+    <title>Vintage Stitches | FAQ</title>
+</head>
+<body>
+    <header>
+        <h1>Vintage Stitches FAQ</h1>
+        <nav>
+         <a href="homepage.html">Home</a>
+         <a href="catalogue.html">Catalogue</a>
+         <a href="checkout.html">Checkout</a>
+         <a href="faq.html">FAQ</a>     
+         <a href="about-us.html">About Us</a>
+        </nav>
+    </header>
+    
+    <!-- FAQ section -->
+    <main>
+        <h2>Frequently asked questions about orders, sizes and handmade knitwear</h2>
+        <p class="subheading">Find answers about product availability, pickup, sizing and how to contact us about custom or business enquiries.</p>
+
+        <div class="multibox">
+        <div style="flex: .7;">
+            <ul>
+                <li>Q. When can I pickup? <br>
+                    A. You will receive an email/phone call when your order is ready to pickup.</li>
+                    <br>
+                <li>Q. How long will my order take? <br>
+                    A. This depending on stock, your may have to wait for productions to be made.</li>
+                    <br>
+                <li>Q. Can I change the size of my item? <br>
+                    A. Due to the small nature of production, there is only one size of item at the moments.</li>
+                    <br>
+                <li>Q. How do I know when products on offer change? <br>
+                    A. The catalogue will be updated accordingly. New editions will be presented on the homepage.</li>
+                    <br>
+                <li>Q. I'm interested in working with you, how do I get in touch? <br>
+                    A. You may contact me via email. See about us for more info.</li>
+            </ul>
+        </div>
+
+        <!-- Question submission form -->
+        <div style="flex: .3;">
+            <h3>Submit a question</h3>
+            <form class="subForm" name="faqForm" method="POST" data-netlify="true">
+                <input type="hidden" name="form-name" value="faqForm">
+
+                <label for="question-name">Name:</label><br>
+                <input type="text" id="question-name" name="question-name" maxlength="20"><br><br>
+
+                <label for="question-email">Email:</label><br>
+                <input type="text" id="question-email" name="question-email"><br><br>
+
+                <label for="question-text">Your question:</label><br>
+                <textarea id="question-text" name="question-text" rows="5" cols="30" maxlength="500"></textarea><br><br>
+
+                <button type="submit" id="submitQuestion" class="buttonFaq">Submit</button>
+            </form>
+        </div>
+        </div>
+    </main>
+
+    <footer style="background-color: #cfBaf0;">
+        <p>© 2026 Vintage Stitches. All rights reserved.</p>
+    </footer>
+    <script src="_js-assets/scripts.js"></script>
+</body>
+</html>

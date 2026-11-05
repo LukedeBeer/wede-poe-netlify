@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vintage Stitches is a growing business which offers a select, rotating rang of high quality, handmade woolen clothing products and accessories.">
+    <meta name="keywords" content="Cloths, Accessories, Knitted, Handmade, Winter, Warm, Durban, South Africa">
+    <link rel="stylesheet" href="_css/styleSheet.css">
+    <title>Vintage Stitches | Catalogue</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Vintage Stitches product catalogue</h1>
+        <nav>
+         <a href="homepage.html">Home</a>
+         <a href="catalogue.html">Catalogue</a>
+         <a href="checkout.html">Checkout</a>
+         <a href="faq.html">FAQ</a>     
+         <a href="about-us.html">About Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Browse our handmade beanies, scarves, socks and sweaters</h2>
+        <p class="subheading">Add items to cart and review your handmade winter essentials before checkout.</p>
+
+        <div class="searchbar">
+            <input id="textSearch" type="text" placeholder="Search item by name">
+            
+            <!--Ask CoPilot was used as a reference for accordion implementation-->
+             <div class="sizeFilter">
+                <button type="button" class="accordionToggle" aria-expanded="false" aria-controls="sizeAccordion">
+                Sort by size <span class="accordionIndicator">▾</span>
+                </button>
+
+                <div id="sizeAccordion" class="sizeAccordion" aria-hidden="true">
+                    <button type="button" class="sizeOption active" data-size="all">All</button>
+                    <button type="button" class="sizeOption" data-size="s">Small</button>
+                    <button type="button" class="sizeOption" data-size="m">Medium</button>
+                    <button type="button" class="sizeOption" data-size="l">Large</button>
+                </div>
+            </div>
+        </div>
+
+        <figure class="catalogueFigure">
+            <div>
+                <div class="catalogueItem" data-size="s">
+                    <a class="lightbox-trigger" href="_images/Beanie-1.jpg">
+                        <img src="_images/Beanie-1.jpg" alt="Handmade grey beanie - small size, wool winter accessory | R125" title="Handmade grey beanie - small size, wool winter accessory | R125" width="180" height="300" loading="lazy">
+                    </a>
+                    <p>Grey hat - Small | R125</p>
+                    <button type="button" class="buttonCat" id="addGreyHat">Add to checkout</button>
+                </div>
+                <div class="catalogueItem" data-size="m">
+                    <a class="lightbox-trigger" href="_images/Beanie-2.jpg">
+                        <img src="_images/Beanie-2.jpg" alt="Handmade striped bobble hat - medium size, winter knit accessory | R140" title="Handmade striped bobble hat - medium size, winter knit accessory | R140" width="180" height="300" loading="lazy">
+                    </a>
+                    <p>Striped bobble hat - Medium | R140</p>
+                    <button type="button" class="buttonCat" id="addStripedBobbleHat">Add to checkout</button>
+                </div>
+                <div class="catalogueItem" data-size="m">
+                    <a class="lightbox-trigger" href="_images/Mittins.jpg">
+                        <img src="_images/Mittins.jpg" alt="Handmade grey mittens - medium size, wool winter gloves | R135" title="Handmade grey mittens - medium size, wool winter gloves | R135" width="180" height="300" loading="lazy">
+                    </a>
+                    <p>Grey mittens - Medium | R135</p>
+                    <button type="button" class="buttonCat" id="addGreyMittens">Add to checkout</button>
+                </div>
+                <div class="catalogueItem" data-size="m">
+                    <a class="lightbox-trigger" href="_images/Scarf.jpg">
+                        <img src="_images/Scarf.jpg" alt="Handmade white scarf - medium size, wool winter accessory | R120" title="Handmade white scarf - medium size, wool winter accessory | R120" width="180" height="300" loading="lazy">
+                    </a>
+                    <p>White scarf - Medium | R120</p>
+                    <button type="button" class="buttonCat" id="addWhiteScarf">Add to checkout</button>
+                </div>
+            </div>
+            <div>
+                <div class="catalogueItem" data-size="m">
+                    <a class="lightbox-trigger" href="_images/Socks-1.jpg">
+                        <img src="_images/Socks-1.jpg" alt="Handmade dark-grey wool socks - medium size, winter accessory | R90" title="Handmade dark-grey wool socks - medium size, winter accessory | R90" width="180" height="300" loading="lazy">
+                    </a>
+                    <p>Dark-grey socks - Medium | R90</p>
+                    <button type="button" class="buttonCat" id="addDarkGreySocks">Add to checkout</button>
+                </div>
+                <div class="catalogueItem" data-size="l">
+                    <a class="lightbox-trigger" href="_images/Socks-2.jpg">
+                        <img src="_images/Socks-2.jpg" alt="Handmade pink wool socks - large size, winter accessory | R90" title="Handmade pink wool socks - large size, winter accessory | R90" width="180" height="300" loading="lazy">
+                    </a>
+                    <p>Pink socks - Large | R90</p>
+                    <button type="button" class="buttonCat" id="addPinkSocks">Add to checkout</button>
+                </div>
+                <div class="catalogueItem" data-size="l">
+                    <a class="lightbox-trigger" href="_images/Sweater-1.jpg">
+                        <img src="_images/Sweater-1.jpg" alt="Handmade beige sweater - large size, wool knitwear | R350" title="Handmade beige sweater - large size, wool knitwear | R350" width="180" height="300" loading="lazy">
+                    </a>
+                    <p>Beige sweater - Large | R350</p>
+                    <button type="button" class="buttonCat" id="addBeigeSweater">Add to checkout</button>
+                </div>
+                <div class="catalogueItem" data-size="l">
+                    <a class="lightbox-trigger" href="_images/Sweater-2.jpg">
+                        <img src="_images/Sweater-2.jpg" alt="Handmade pink patterned button-up sweater - large size, wool knitwear | R400" title="Handmade pink patterned button-up sweater - large size, wool knitwear | R400" width="180" height="300" loading="lazy">
+                    </a>
+                    <p>Pink pattern button-up - Large | R400</p>
+                    <button type="button" class="buttonCat" id="addPinkPatternButtonUp">Add to checkout</button>
+                </div>
+            </div>
+        </figure>
+    </main>
+
+    <footer style="background-color: #fde4cf;">
+        <p>© 2026 Vintage Stitches. All rights reserved.</p>
+    </footer>
+
+    <!--Lightbox html-->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img id="lightbox-image" src="" alt="Expanded view of a Vintage Stitches handmade product">
+    </div>
+    <script src="_js-assets/scripts.js"></script>
+</body>
+</html>
